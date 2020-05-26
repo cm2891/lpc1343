@@ -52,13 +52,37 @@
 /** In case an MR is not used, we set its value to zero. */
 #define TIMER_MR_NOT_USED					((uint32_t)0)
 
+/** Mask for MCR */
+#define TIMER_MCR_MASK						((uint32_t)0x00000FFF)
+/** Mask for CTCR */
+#define TIMER_CTCR_MASK						((uint32_t)0x0000000F)
+/** Mask for PWMC */
+#define TIMER_PWMC_MASK						((uint32_t)0x0000000F)
+/** Mask to check if interrupts are enabled. */
+#define TIMER_MCR_IRQ_MASK					((uint32_t)0x00000249)
+
 /**
  * 	@brief	Function TIMER_init() initializes a 16-bit/32-bit PWM.
  * 	@param	timer indicates, which timer will be initialized.
  * 	@param	prescaler_val defines the prescaler value.
+ * 	@param  mcr_val value to which the MCR register shall be set to.
  * 	@param	match_vals determines the values for the match registers 1, 2 and 3.
+ * 	@param	irq_prio determines the interrupt priority.
+ * 			If no IRQ via mcr_val is selected, this is ignored.
+ * 	@param  ctcr_val determines the timer mode and the count input select.
+ * 	@param  pwmc_val determines, which match register shall be used as PWM output.
+ * 	@return Bool
+ * 	@retval TRUE configuration success
+ * 	@retval FALSE invalid parameter(s) provided
  */
-void TIMER_init (LPC_TIMER_T *timer, uint32_t prescaler_val, uint32_t *match_vals);
+Bool TIMER_init ( LPC_TIMER_T	*timer
+				, uint32_t		prescaler_val
+				, uint32_t		mcr_val
+				, uint32_t		*match_vals
+				, uint32_t		irq_prio
+				, uint32_t		ctcr_val
+				, uint32_t		pwmc_val
+				);
 
 /**
  * 	@brief	Function TIMER_start() starts 16-bit/32-bit PWM.

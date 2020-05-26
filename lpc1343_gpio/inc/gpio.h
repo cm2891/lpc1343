@@ -29,7 +29,7 @@
  *				0 --> INPUT
  *				1 --> OUTPUT
  */
-void GPIO_SetDirection(LPC_GPIO_T *gpio, uint8_t pin, uint8_t dir);
+void GPIO_SetDirection (LPC_GPIO_T *gpio, uint8_t pin, uint8_t dir);
 
 /**
  *	@brief		Function GPIO_SetOutputLevel() sets a GPIO pin's output level.
@@ -39,14 +39,14 @@ void GPIO_SetDirection(LPC_GPIO_T *gpio, uint8_t pin, uint8_t dir);
  *				0 --> LOW
  *				1 --> HIGH
  */
-void GPIO_SetOutputLevel(LPC_GPIO_T *gpio, uint8_t pin, uint8_t level);
+void GPIO_SetOutputLevel (LPC_GPIO_T *gpio, uint8_t pin, uint8_t level);
 
 /**
  * 	@brief		Function GPIO_ToggleOutput toggles a GPIO pin's output level.
  *	@param		gpio register the pin belongs to.
  *	@param		pin to be set.
  */
-void GPIO_ToggleOutput(LPC_GPIO_T *gpio, uint8_t pin);
+void GPIO_ToggleOutput (LPC_GPIO_T *gpio, uint8_t pin);
 
 /**
  *	@brief		Function GPIO_GetPinLevel() reads a GPIO pin's data register.
@@ -56,7 +56,7 @@ void GPIO_ToggleOutput(LPC_GPIO_T *gpio, uint8_t pin);
  *	@return		0 --> LOW
  *				1 --> HIGH
  */
-uint32_t GPIO_GetPinLevel(LPC_GPIO_T *gpio, uint8_t pin);
+uint32_t GPIO_GetPinLevel (LPC_GPIO_T *gpio, uint8_t pin);
 
 /**
  * 	@brief		Function GPIO_TurnOnLED() turns a given LED on.
@@ -64,7 +64,7 @@ uint32_t GPIO_GetPinLevel(LPC_GPIO_T *gpio, uint8_t pin);
  * 	@param		pin	the led is connected with.
  * 	@note		Set the constant LOW_ACTIVE_LED according to your LEDs.
  */
-void GPIO_TurnOnLED(LPC_GPIO_T *gpio, uint8_t pin);
+void GPIO_TurnOnLED (LPC_GPIO_T *gpio, uint8_t pin);
 
 /**
  * 	@brief		Function GPIO_TurnOffLED() turns a given LED on.
@@ -72,7 +72,7 @@ void GPIO_TurnOnLED(LPC_GPIO_T *gpio, uint8_t pin);
  * 	@param		pin	the led is connected with.
  * 	@note		Set the constant LOW_ACTIVE_LED according to your LEDs.
  */
-void GPIO_TurnOffLED(LPC_GPIO_T *gpio, uint8_t pin);
+void GPIO_TurnOffLED (LPC_GPIO_T *gpio, uint8_t pin);
 
 
 #endif /* GPIO_H_ */

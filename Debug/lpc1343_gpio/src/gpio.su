@@ -1,0 +1,6 @@
+gpio.c:9:6:GPIO_SetDirection	16	static
+gpio.c:17:6:GPIO_SetOutputLevel	16	static
+gpio.c:26:6:GPIO_ToggleOutput	16	static
+gpio.c:34:10:GPIO_GetPinLevel	16	static
+gpio.c:39:6:GPIO_TurnOnLED	16	static
+gpio.c:48:6:GPIO_TurnOffLED	16	static

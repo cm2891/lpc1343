@@ -4,74 +4,53 @@
  * 	@author     Christian Matar
  */
 
-#include <timer.h>
+#include "timer.h"
 
-void TIMER_init (LPC_TIMER_T *timer, uint32_t prescaler_val, uint32_t *match_vals)
+Bool TIMER_init ( LPC_TIMER_T	*timer
+				, uint32_t 		prescaler_val
+				, uint32_t 		mcr_val
+				, uint32_t 		*match_vals
+				, uint32_t 		irq_prio
+				, uint32_t 		ctcr_val
+				, uint32_t 		pwmc_val
+				)
 {
 	if(!timer || !match_vals)
-		return;
+		/* Invalid handles provided --> report error. */
+		return FALSE;
 
 	uint8_t 			enable_bit;
-	CHIP_IOCON_PIO_T 	iocon;
-	LPC_GPIO_T 			*gpio = LPC_GPIO1;
-	uint8_t 			pin;
 	LPC1343_IRQn_Type 	irq;
-	uint8_t 			func = IOCON_FUNC2;
 	uint8_t 			i;
-	/* Reset TC and PC once TC matches MR3. */
-	uint32_t			MCR_val = (1<<10);
-	uint32_t 			irq_prio;
 
 	if (timer == LPC_TIMER16_0)
 	{
 		enable_bit 	= SYSCTL_CLOCK_CT16B0;
-		iocon 		= IOCON_PIO0_8;
-		gpio 		= LPC_GPIO0;
-		pin 		= 8U;
 		irq 		= TIMER_16_0_IRQn;
-		irq_prio	= TIMER16_0_IRQ_PRIO;
 	}
 	else if (timer == LPC_TIMER16_1)
 	{
 		enable_bit 	= SYSCTL_CLOCK_CT16B1;
-		iocon 		= IOCON_PIO1_9;
-		pin 		= 9U;
 		irq 		= TIMER_16_1_IRQn;
-		func 		= IOCON_FUNC1;
-		irq_prio	= TIMER16_1_IRQ_PRIO;
 	}
 	else if (timer == LPC_TIMER32_0)
 	{
 		enable_bit 	= SYSCTL_CLOCK_CT32B0;
-		iocon 		= IOCON_PIO1_6;
-		pin 		= 6U;
 		irq 		= TIMER_32_0_IRQn;
-		irq_prio	= TIMER32_0_IRQ_PRIO;
-		/* Enable interrupt generation for MR1 and MR2. */
-		MCR_val 	|= (1<<3 | 1<<6);
 	}
 	else if (timer == LPC_TIMER32_1)
 	{
 		enable_bit 	= SYSCTL_CLOCK_CT32B1;
-		iocon 		= IOCON_PIO1_1;
-		pin 		= 1U;
 		irq 		= TIMER_32_1_IRQn;
-		irq_prio	= TIMER32_1_IRQ_PRIO;
-		func 		= IOCON_FUNC3;
-		/* Enable interrupt generation for MR1. */
-		MCR_val 	|= (1<<3);
 	}
 	else
 	{
-		return;
+		/* The provided timer handle is none of the LPC timers --> report an error. */
+		return FALSE;
 	}
 
 	/* Enable clock for timer. */
 	LPC_SYSCTL->SYSAHBCLKCTRL |= 1 << enable_bit;
-
-	/* Set GPIO function to PWM output and enable pull-up resistor. */
-	LPC_IOCON->REG[iocon] = (func) | (IOCON_MODE_PULLUP);
-	GPIO_SetDirection (gpio, pin, GPIO_DIR_OUTPUT);
 
 	/* reset timer and release reset immediately */
 	timer->TCR |= 1<<1;
@@ -81,26 +60,32 @@ void TIMER_init (LPC_TIMER_T *timer, uint32_t prescaler_val, uint32_t *match_val
 	timer->PR = prescaler_val;
 
 	/* Set MR0, MR1, MR2 and MR3 */
-	for ( i = 0U; i < 4U; i++ )
+	for (i = 0U; i < 4U; i++)
 		timer->MR[i] = match_vals[i];
 
-	/* Reset timer counter, when value of MR3 is matched.
-	 * For TIMER32_0 enable MR1 and MR2 interrupt generation too,
-	 * to start TIMER16_0 and TIMER32_0.
-	 * For TIMER32_1 enable MR1 interrupt generation too,
-	 * to start TIMER16_1.
-	 * This interrupt controlled start of timers ensures the wished delays between them. */
-	timer->MCR |= MCR_val;
+	/* Configure the match control register, which determines the the timer reaction,
+	 * when the timer value matches the respective match register value.
+	 * Possible reactions are:
+	 * 		1. Generate an interrupt.
+	 * 		2. Reset the TC and PC values.
+	 * 		3. Stop the timer.
+	 */
+	timer->MCR = (mcr_val & TIMER_MCR_MASK);
 
 	/* Set timer mode */
-	timer->CTCR &= 0x0;
+	timer->CTCR = (ctcr_val & TIMER_CTCR_MASK);
 
 	/* Configure MR0 to be a PWM output. */
-	timer->PWMC |= 1<<0;
+	timer->PWMC = (pwmc_val & TIMER_PWMC_MASK);
 
-	/* connect interrupts */
-	NVIC_EnableIRQ (irq);
-	NVIC_SetPriority (irq, irq_prio);
+	/* Connect interrupts, if any are configured. */
+	if (mcr_val & TIMER_MCR_IRQ_MASK)
+	{
+		NVIC_EnableIRQ (irq);
+		NVIC_SetPriority (irq, irq_prio);
+	}
+
+	return TRUE;
 }
 
 void TIMER_start (LPC_TIMER_T *timer)
