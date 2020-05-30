@@ -1,0 +1,91 @@
+\doxysection{lpc1343\+\_\+i2c/src/i2c\+\_\+slave\+\_\+addr.c File Reference}
+\label{i2c__slave__addr_8c}\index{lpc1343\_i2c/src/i2c\_slave\_addr.c@{lpc1343\_i2c/src/i2c\_slave\_addr.c}}
+
+
+Source file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}i2c\+\_\+slave\+\_\+addr.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+slave\+\_\+addr.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__slave__addr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ I2\+C\+\_\+set\+\_\+slave\+\_\+addr} (uint32\+\_\+t $\ast$addr)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+set\+\_\+slave\+\_\+addr configures four slave addresses. \end{DoxyCompactList}\item 
+Bool \textbf{ I2\+C\+\_\+set\+\_\+mask} (uint32\+\_\+t $\ast$mask)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+set\+\_\+mask configures four bit masks for comparison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__slave__addr_8c_a71a638def4af6b2527faf1e65acfbcce}} 
+\index{i2c\_slave\_addr.c@{i2c\_slave\_addr.c}!I2C\_set\_mask@{I2C\_set\_mask}}
+\index{I2C\_set\_mask@{I2C\_set\_mask}!i2c\_slave\_addr.c@{i2c\_slave\_addr.c}}
+\doxysubsubsection{I2C\_set\_mask()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+set\+\_\+mask (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{mask }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+set\+\_\+mask configures four bit masks for comparison. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mask,an} & array, which holds the four bit masks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & configuration failed. \\
+\hline
+{\em T\+R\+UE} & configuration succeeded. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 22 of file i2c\+\_\+slave\+\_\+addr.\+c.
+
+\mbox{\label{i2c__slave__addr_8c_aa88ef19ce9b6791477a8b126ec3d4175}} 
+\index{i2c\_slave\_addr.c@{i2c\_slave\_addr.c}!I2C\_set\_slave\_addr@{I2C\_set\_slave\_addr}}
+\index{I2C\_set\_slave\_addr@{I2C\_set\_slave\_addr}!i2c\_slave\_addr.c@{i2c\_slave\_addr.c}}
+\doxysubsubsection{I2C\_set\_slave\_addr()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+set\+\_\+slave\+\_\+addr (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+set\+\_\+slave\+\_\+addr configures four slave addresses. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em addr,an} & array, which holds the four addresses. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & configuration failed. \\
+\hline
+{\em T\+R\+UE} & configuration succeeded. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file i2c\+\_\+slave\+\_\+addr.\+c.
+

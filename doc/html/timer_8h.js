@@ -1,0 +1,27 @@
+var timer_8h =
+[
+    [ "TIMER16_0_IRQ_PRIO", "timer_8h.html#a7b9faba1a37289810f9423df5bf1ff94", null ],
+    [ "TIMER16_0_MR0", "timer_8h.html#a2928b720ea4049a7930ccbe80b7dba64", null ],
+    [ "TIMER16_1_IRQ_PRIO", "timer_8h.html#afc117fa6d86471c3393df14aad51b273", null ],
+    [ "TIMER16_1_MR0", "timer_8h.html#aa9e48c2f99abeb65968a83744b938151", null ],
+    [ "TIMER32_0_IRQ_PRIO", "timer_8h.html#a5bf37935809d851961da69ab0b95fad2", null ],
+    [ "TIMER32_0_MR0", "timer_8h.html#a1dd2a9d45f3e57d960d108eaef20b30f", null ],
+    [ "TIMER32_0_MR1", "timer_8h.html#a6a0da91ccd7bee3decf2915745fe3e9a", null ],
+    [ "TIMER32_0_MR2", "timer_8h.html#aef89625aaa4a6ad9925552e0b8f571dd", null ],
+    [ "TIMER32_1_IRQ_PRIO", "timer_8h.html#ae83ac56b9446eb0ad4b251d89ed1a029", null ],
+    [ "TIMER32_1_MR0", "timer_8h.html#a133310a3cb4823d819b58e908129c2f6", null ],
+    [ "TIMER32_1_MR1", "timer_8h.html#abe500ead39b6572960d7b23d11018700", null ],
+    [ "TIMER_CTCR_MASK", "timer_8h.html#ab7f6adb34b8fb044b288bf24bbb6678b", null ],
+    [ "TIMER_MATCH_3_VAL", "timer_8h.html#a1ddb7a620a977fdea1b57e8e815a35d1", null ],
+    [ "TIMER_MCR_IRQ_MASK", "timer_8h.html#a26c6940b18f98a25c86d6344a10f278b", null ],
+    [ "TIMER_MCR_MASK", "timer_8h.html#a61cd40e3561e34ce00e1900c6bb0230a", null ],
+    [ "TIMER_MR_NOT_USED", "timer_8h.html#a4d7fd691c80fd169b6ec07d2e530b829", null ],
+    [ "TIMER_PRESCALER", "timer_8h.html#aa7914b8d7fd0bae056b85acb5062676b", null ],
+    [ "TIMER_PWMC_MASK", "timer_8h.html#a54f70c3bbdaebd5359bd8cfd1468e0ad", null ],
+    [ "TIMER_init", "timer_8h.html#a19834a8f4c9cdb8e515d360ad8562b8c", null ],
+    [ "TIMER_setDutyCycle", "timer_8h.html#ae260402b66405853dbf8892bfff75ee4", null ],
+    [ "TIMER_start", "timer_8h.html#a42183713e3e8fd68e53ef194560c27ce", null ],
+    [ "TIMER_startAll", "timer_8h.html#a3cef41be3cf1da72c6cee93ecd990ab1", null ],
+    [ "TIMER_stop", "timer_8h.html#aeae09ad71b26e0f76de0602c91f3a188", null ],
+    [ "TIMER_stopAll", "timer_8h.html#a6e06d762765cce8068db15a405e85e48", null ]
+];

@@ -1,0 +1,7 @@
+<map id="lpc1343_spp/inc/spp.h" name="lpc1343_spp/inc/spp.h">
+<area shape="rect" id="node1" title="Header file for LPC1343 SPI." alt="" coords="250,5,402,32"/>
+<area shape="rect" id="node2" href="$spp__get__status_8c.html" title=" " alt="" coords="5,80,148,121"/>
+<area shape="rect" id="node3" href="$spp__init_8c.html" title="Source file for LPC1343 SPP." alt="" coords="172,80,315,121"/>
+<area shape="rect" id="node4" href="$spp__read_8c.html" title="Source file for LPC1343 SPP." alt="" coords="339,80,481,121"/>
+<area shape="rect" id="node5" href="$spp__write_8c.html" title="Source file for LPC1343 SPP." alt="" coords="505,80,648,121"/>
+</map>

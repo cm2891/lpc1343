@@ -1,0 +1,61 @@
+\doxysection{lpc1343\+\_\+i2c/src/i2c\+\_\+mode.c File Reference}
+\label{i2c__mode_8c}\index{lpc1343\_i2c/src/i2c\_mode.c@{lpc1343\_i2c/src/i2c\_mode.c}}
+
+
+Source file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}i2c\+\_\+mode.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i2c\+\_\+control.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+mode.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{i2c__mode_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ I2\+C\+\_\+set\+\_\+mode} (\textbf{ I2\+C\+\_\+\+M\+O\+DE} mode)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+set\+\_\+mode sets the mode the L\+PC shall operate the I2C bus in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__mode_8c_adfe431b34a79a9f699418a45471a2f96}} 
+\index{i2c\_mode.c@{i2c\_mode.c}!I2C\_set\_mode@{I2C\_set\_mode}}
+\index{I2C\_set\_mode@{I2C\_set\_mode}!i2c\_mode.c@{i2c\_mode.c}}
+\doxysubsubsection{I2C\_set\_mode()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+M\+O\+DE}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+set\+\_\+mode sets the mode the L\+PC shall operate the I2C bus in. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mode} & The I2C mode. Valid values are defined by {\bfseries{I2\+C\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & mode was not set. \\
+\hline
+{\em T\+R\+UE} & mode was set. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 10 of file i2c\+\_\+mode.\+c.
+

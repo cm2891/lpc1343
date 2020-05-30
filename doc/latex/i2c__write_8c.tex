@@ -1,0 +1,54 @@
+\doxysection{lpc1343\+\_\+i2c/src/i2c\+\_\+write.c File Reference}
+\label{i2c__write_8c}\index{lpc1343\_i2c/src/i2c\_write.c@{lpc1343\_i2c/src/i2c\_write.c}}
+
+
+Source file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}i2c\+\_\+write.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i2c\+\_\+control.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+write.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{i2c__write_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ I2\+C\+\_\+write} (uint32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+write sends one byte over the I2C bus. The I2C module must be configured beforehand. Although the L\+PC register I2\+C0\+D\+AT is 32-\/bit wide, only one byte can be written. The function takes care to mask the data accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__write_8c_a936e93dead37fb3e85ee2bc9c85a254c}} 
+\index{i2c\_write.c@{i2c\_write.c}!I2C\_write@{I2C\_write}}
+\index{I2C\_write@{I2C\_write}!i2c\_write.c@{i2c\_write.c}}
+\doxysubsubsection{I2C\_write()}
+{\footnotesize\ttfamily void I2\+C\+\_\+write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+write sends one byte over the I2C bus. The I2C module must be configured beforehand. Although the L\+PC register I2\+C0\+D\+AT is 32-\/bit wide, only one byte can be written. The function takes care to mask the data accordingly. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & the byte to be sent. It will be masked with {\bfseries{I2\+C\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+SK}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file i2c\+\_\+write.\+c.
+

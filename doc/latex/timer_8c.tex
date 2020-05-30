@@ -1,0 +1,235 @@
+\doxysection{lpc1343\+\_\+timer/src/timer.c File Reference}
+\label{timer_8c}\index{lpc1343\_timer/src/timer.c@{lpc1343\_timer/src/timer.c}}
+
+
+16-\/bit/32-\/bit timer source file  
+
+
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+Include dependency graph for timer.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{timer_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ T\+I\+M\+E\+R\+\_\+init} (L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$timer, uint32\+\_\+t prescaler\+\_\+val, uint32\+\_\+t mcr\+\_\+val, uint32\+\_\+t $\ast$match\+\_\+vals, uint32\+\_\+t irq\+\_\+prio, uint32\+\_\+t ctcr\+\_\+val, uint32\+\_\+t pwmc\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+init()}{p.}{timer_8h_a19834a8f4c9cdb8e515d360ad8562b8c} initializes a 16-\/bit/32-\/bit P\+WM. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R\+\_\+start} (L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$timer)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+start()}{p.}{timer_8h_a42183713e3e8fd68e53ef194560c27ce} starts 16-\/bit/32-\/bit P\+WM. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R\+\_\+stop} (L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$timer)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+stop()}{p.}{timer_8h_aeae09ad71b26e0f76de0602c91f3a188} stops a 16-\/bit/32-\/bit P\+WM. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R\+\_\+start\+All} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+start\+All()}{p.}{timer_8h_a3cef41be3cf1da72c6cee93ecd990ab1} starts all four P\+W\+Ms. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R\+\_\+stop\+All} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+stop\+All()}{p.}{timer_8h_a6e06d762765cce8068db15a405e85e48} stops all four P\+W\+Ms. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R\+\_\+set\+Duty\+Cycle} (L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$timer, uint8\+\_\+t match\+\_\+reg, double duty\+\_\+cycle)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R\+\_\+set\+Duty\+Cycle()}{p.}{timer_8h_ae260402b66405853dbf8892bfff75ee4} changes a timer\textquotesingle{}s duty cycle. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R16\+\_\+0\+\_\+\+I\+R\+Q\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R16\+\_\+0\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a1ec0594f7e67f1144b5dfdfee916f372} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R16\+\_\+0. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R16\+\_\+1\+\_\+\+I\+R\+Q\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R16\+\_\+1\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a1714b6bac43733a226144b01f83148b7} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R16\+\_\+1. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R32\+\_\+0\+\_\+\+I\+R\+Q\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R32\+\_\+0\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_aa80f93dacb7e3c02586240150ebb5bbf} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R32\+\_\+0. \end{DoxyCompactList}\item 
+void \textbf{ T\+I\+M\+E\+R32\+\_\+1\+\_\+\+I\+R\+Q\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{T\+I\+M\+E\+R32\+\_\+1\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a580baf95e8af697e3acafb6d9d77c3ee} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R32\+\_\+1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+16-\/bit/32-\/bit timer source file 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{timer_8c_a1ec0594f7e67f1144b5dfdfee916f372}} 
+\index{timer.c@{timer.c}!TIMER16\_0\_IRQHandler@{TIMER16\_0\_IRQHandler}}
+\index{TIMER16\_0\_IRQHandler@{TIMER16\_0\_IRQHandler}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER16\_0\_IRQHandler()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R16\+\_\+0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R16\+\_\+0\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a1ec0594f7e67f1144b5dfdfee916f372} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R16\+\_\+0. 
+
+
+
+Definition at line 138 of file timer.\+c.
+
+\mbox{\label{timer_8c_a1714b6bac43733a226144b01f83148b7}} 
+\index{timer.c@{timer.c}!TIMER16\_1\_IRQHandler@{TIMER16\_1\_IRQHandler}}
+\index{TIMER16\_1\_IRQHandler@{TIMER16\_1\_IRQHandler}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER16\_1\_IRQHandler()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R16\+\_\+1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R16\+\_\+1\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a1714b6bac43733a226144b01f83148b7} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R16\+\_\+1. 
+
+
+
+Definition at line 149 of file timer.\+c.
+
+\mbox{\label{timer_8c_aa80f93dacb7e3c02586240150ebb5bbf}} 
+\index{timer.c@{timer.c}!TIMER32\_0\_IRQHandler@{TIMER32\_0\_IRQHandler}}
+\index{TIMER32\_0\_IRQHandler@{TIMER32\_0\_IRQHandler}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER32\_0\_IRQHandler()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R32\+\_\+0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R32\+\_\+0\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_aa80f93dacb7e3c02586240150ebb5bbf} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R32\+\_\+0. 
+
+
+
+Definition at line 160 of file timer.\+c.
+
+\mbox{\label{timer_8c_a580baf95e8af697e3acafb6d9d77c3ee}} 
+\index{timer.c@{timer.c}!TIMER32\_1\_IRQHandler@{TIMER32\_1\_IRQHandler}}
+\index{TIMER32\_1\_IRQHandler@{TIMER32\_1\_IRQHandler}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER32\_1\_IRQHandler()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R32\+\_\+1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R32\+\_\+1\+\_\+\+I\+R\+Q\+Handler()}{p.}{timer_8c_a580baf95e8af697e3acafb6d9d77c3ee} implements the interrupt handler for L\+P\+C\+\_\+\+T\+I\+M\+E\+R32\+\_\+1. 
+
+
+
+Definition at line 198 of file timer.\+c.
+
+\mbox{\label{timer_8c_a19834a8f4c9cdb8e515d360ad8562b8c}} 
+\index{timer.c@{timer.c}!TIMER\_init@{TIMER\_init}}
+\index{TIMER\_init@{TIMER\_init}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_init()}
+{\footnotesize\ttfamily Bool T\+I\+M\+E\+R\+\_\+init (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$}]{timer,  }\item[{uint32\+\_\+t}]{prescaler\+\_\+val,  }\item[{uint32\+\_\+t}]{mcr\+\_\+val,  }\item[{uint32\+\_\+t $\ast$}]{match\+\_\+vals,  }\item[{uint32\+\_\+t}]{irq\+\_\+prio,  }\item[{uint32\+\_\+t}]{ctcr\+\_\+val,  }\item[{uint32\+\_\+t}]{pwmc\+\_\+val }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+init()}{p.}{timer_8h_a19834a8f4c9cdb8e515d360ad8562b8c} initializes a 16-\/bit/32-\/bit P\+WM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & indicates, which timer will be initialized. \\
+\hline
+{\em prescaler\+\_\+val} & defines the prescaler value. \\
+\hline
+{\em mcr\+\_\+val} & value to which the M\+CR register shall be set to. \\
+\hline
+{\em match\+\_\+vals} & determines the values for the match registers 1, 2 and 3. \\
+\hline
+{\em irq\+\_\+prio} & determines the interrupt priority. If no I\+RQ via mcr\+\_\+val is selected, this is ignored. \\
+\hline
+{\em ctcr\+\_\+val} & determines the timer mode and the count input select. \\
+\hline
+{\em pwmc\+\_\+val} & determines, which match register shall be used as P\+WM output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em T\+R\+UE} & configuration success \\
+\hline
+{\em F\+A\+L\+SE} & invalid parameter(s) provided \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file timer.\+c.
+
+\mbox{\label{timer_8c_ae260402b66405853dbf8892bfff75ee4}} 
+\index{timer.c@{timer.c}!TIMER\_setDutyCycle@{TIMER\_setDutyCycle}}
+\index{TIMER\_setDutyCycle@{TIMER\_setDutyCycle}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_setDutyCycle()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+\_\+set\+Duty\+Cycle (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$}]{timer,  }\item[{uint8\+\_\+t}]{match\+\_\+reg,  }\item[{double}]{duty\+\_\+cycle }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+set\+Duty\+Cycle()}{p.}{timer_8h_ae260402b66405853dbf8892bfff75ee4} changes a timer\textquotesingle{}s duty cycle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & indicates, which timer\textquotesingle{}s P\+WM will be initialized. \\
+\hline
+{\em match\+\_\+reg} & determines the match register to be updated. Supported values are\+: 0, 1 and 2. \\
+\hline
+{\em duty\+\_\+cycle} & sets the P\+WM\textquotesingle{}s duty cycle. The value has to be a percentage value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file timer.\+c.
+
+\mbox{\label{timer_8c_a42183713e3e8fd68e53ef194560c27ce}} 
+\index{timer.c@{timer.c}!TIMER\_start@{TIMER\_start}}
+\index{TIMER\_start@{TIMER\_start}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_start()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+\_\+start (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$}]{timer }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+start()}{p.}{timer_8h_a42183713e3e8fd68e53ef194560c27ce} starts 16-\/bit/32-\/bit P\+WM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & indicates, which timer\textquotesingle{}s P\+WM will be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file timer.\+c.
+
+\mbox{\label{timer_8c_a3cef41be3cf1da72c6cee93ecd990ab1}} 
+\index{timer.c@{timer.c}!TIMER\_startAll@{TIMER\_startAll}}
+\index{TIMER\_startAll@{TIMER\_startAll}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_startAll()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+\_\+start\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+start\+All()}{p.}{timer_8h_a3cef41be3cf1da72c6cee93ecd990ab1} starts all four P\+W\+Ms. 
+
+
+
+Definition at line 107 of file timer.\+c.
+
+\mbox{\label{timer_8c_aeae09ad71b26e0f76de0602c91f3a188}} 
+\index{timer.c@{timer.c}!TIMER\_stop@{TIMER\_stop}}
+\index{TIMER\_stop@{TIMER\_stop}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_stop()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+\_\+stop (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+T\+I\+M\+E\+R\+\_\+T $\ast$}]{timer }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+stop()}{p.}{timer_8h_aeae09ad71b26e0f76de0602c91f3a188} stops a 16-\/bit/32-\/bit P\+WM. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & indicates, which timer\textquotesingle{}s P\+WM will be initialized. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file timer.\+c.
+
+\mbox{\label{timer_8c_a6e06d762765cce8068db15a405e85e48}} 
+\index{timer.c@{timer.c}!TIMER\_stopAll@{TIMER\_stopAll}}
+\index{TIMER\_stopAll@{TIMER\_stopAll}!timer.c@{timer.c}}
+\doxysubsubsection{TIMER\_stopAll()}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R\+\_\+stop\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{T\+I\+M\+E\+R\+\_\+stop\+All()}{p.}{timer_8h_a6e06d762765cce8068db15a405e85e48} stops all four P\+W\+Ms. 
+
+
+
+Definition at line 115 of file timer.\+c.
+

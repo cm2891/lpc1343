@@ -1,0 +1,58 @@
+\doxysection{lpc1343\+\_\+iocon/src/iocon.c File Reference}
+\label{iocon_8c}\index{lpc1343\_iocon/src/iocon.c@{lpc1343\_iocon/src/iocon.c}}
+
+
+Source file for L\+P\+C1343 I\+O\+C\+ON.  
+
+
+{\ttfamily \#include \char`\"{}iocon.\+h\char`\"{}}\newline
+Include dependency graph for iocon.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{iocon_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ I\+O\+C\+O\+N\+\_\+init} (C\+H\+I\+P\+\_\+\+I\+O\+C\+O\+N\+\_\+\+P\+I\+O\+\_\+T pin, uint8\+\_\+t func, uint8\+\_\+t mode, Bool hysteresis, Bool od)
+\begin{DoxyCompactList}\small\item\em Function I\+O\+C\+O\+N\+\_\+init configures a G\+P\+IO pin to the needed functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for L\+P\+C1343 I\+O\+C\+ON. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{iocon_8c_a57b01d5a911d7056fe2986feaa2046a2}} 
+\index{iocon.c@{iocon.c}!IOCON\_init@{IOCON\_init}}
+\index{IOCON\_init@{IOCON\_init}!iocon.c@{iocon.c}}
+\doxysubsubsection{IOCON\_init()}
+{\footnotesize\ttfamily void I\+O\+C\+O\+N\+\_\+init (\begin{DoxyParamCaption}\item[{C\+H\+I\+P\+\_\+\+I\+O\+C\+O\+N\+\_\+\+P\+I\+O\+\_\+T}]{pin,  }\item[{uint8\+\_\+t}]{func,  }\item[{uint8\+\_\+t}]{mode,  }\item[{Bool}]{hysteresis,  }\item[{Bool}]{od }\end{DoxyParamCaption})}
+
+
+
+Function I\+O\+C\+O\+N\+\_\+init configures a G\+P\+IO pin to the needed functionality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & The G\+P\+IO pin, which shall be configured. \\
+\hline
+{\em func} & The functionality the G\+P\+IO pin shall execute. \\
+\hline
+{\em mode} & The mode the pin shall be set to. \\
+\hline
+{\em hysteresis} & Defines if hysteresis shall be used or not. \\
+\hline
+{\em od} & Defines if the pin shall have a G\+P\+IO or open-\/drain output. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file iocon.\+c.
+

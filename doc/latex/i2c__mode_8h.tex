@@ -1,0 +1,114 @@
+\doxysection{lpc1343\+\_\+i2c/inc/i2c\+\_\+mode.h File Reference}
+\label{i2c__mode_8h}\index{lpc1343\_i2c/inc/i2c\_mode.h@{lpc1343\_i2c/inc/i2c\_mode.h}}
+
+
+Header file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+mode.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{i2c__mode_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__mode_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ I2\+C\+\_\+\+M\+O\+DE} \{ \newline
+\textbf{ I2\+C\+\_\+\+S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+M\+O\+DE}, 
+\textbf{ I2\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+O\+DE}, 
+\textbf{ I2\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+L\+US}, 
+\textbf{ I2\+C\+\_\+\+M\+A\+S\+T\+ER}, 
+\newline
+\textbf{ I2\+C\+\_\+\+S\+L\+A\+VE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ I2\+C\+\_\+set\+\_\+mode} (\textbf{ I2\+C\+\_\+\+M\+O\+DE} mode)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+set\+\_\+mode sets the mode the L\+PC shall operate the I2C bus in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6}} 
+\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_MODE@{I2C\_MODE}}
+\index{I2C\_MODE@{I2C\_MODE}!i2c\_mode.h@{i2c\_mode.h}}
+\doxysubsubsection{I2C\_MODE}
+{\footnotesize\ttfamily enum \textbf{ I2\+C\+\_\+\+M\+O\+DE}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_STANDARD\_MODE@{I2C\_STANDARD\_MODE}!i2c\_mode.h@{i2c\_mode.h}}\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_STANDARD\_MODE@{I2C\_STANDARD\_MODE}}}\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6a6d54929c7f14b7741d9c4d287c388bb8}} 
+I2\+C\+\_\+\+S\+T\+A\+N\+D\+A\+R\+D\+\_\+\+M\+O\+DE&100 k\+Hz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_FAST\_MODE@{I2C\_FAST\_MODE}!i2c\_mode.h@{i2c\_mode.h}}\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_FAST\_MODE@{I2C\_FAST\_MODE}}}\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6a0ad804e3e3125d43402aa933db973a25}} 
+I2\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+O\+DE&400 k\+Hz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_FAST\_MODE\_PLUS@{I2C\_FAST\_MODE\_PLUS}!i2c\_mode.h@{i2c\_mode.h}}\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_FAST\_MODE\_PLUS@{I2C\_FAST\_MODE\_PLUS}}}\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6a28af31a12e7d74359a3282e2a0bf7056}} 
+I2\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+O\+D\+E\+\_\+\+P\+L\+US&1000 k\+Hz \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_MASTER@{I2C\_MASTER}!i2c\_mode.h@{i2c\_mode.h}}\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_MASTER@{I2C\_MASTER}}}\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6af4ca5227cff9f13557a1bbe51ad02724}} 
+I2\+C\+\_\+\+M\+A\+S\+T\+ER&L\+PC is the M\+A\+S\+T\+ER. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_SLAVE@{I2C\_SLAVE}!i2c\_mode.h@{i2c\_mode.h}}\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_SLAVE@{I2C\_SLAVE}}}\mbox{\label{i2c__mode_8h_a31bd14be86e333092ff1561a1185e5c6ae8fe4f82e66f4463eade639f1eaca544}} 
+I2\+C\+\_\+\+S\+L\+A\+VE&L\+PC is a S\+L\+A\+VE. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 16 of file i2c\+\_\+mode.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__mode_8h_adfe431b34a79a9f699418a45471a2f96}} 
+\index{i2c\_mode.h@{i2c\_mode.h}!I2C\_set\_mode@{I2C\_set\_mode}}
+\index{I2C\_set\_mode@{I2C\_set\_mode}!i2c\_mode.h@{i2c\_mode.h}}
+\doxysubsubsection{I2C\_set\_mode()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+M\+O\+DE}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+set\+\_\+mode sets the mode the L\+PC shall operate the I2C bus in. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mode} & The I2C mode. Valid values are defined by {\bfseries{I2\+C\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & mode was not set. \\
+\hline
+{\em T\+R\+UE} & mode was set. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 10 of file i2c\+\_\+mode.\+c.
+

@@ -1,0 +1,167 @@
+\doxysection{lpc1343\+\_\+gpio/src/gpio.c File Reference}
+\label{gpio_8c}\index{lpc1343\_gpio/src/gpio.c@{lpc1343\_gpio/src/gpio.c}}
+{\ttfamily \#include \char`\"{}gpio.\+h\char`\"{}}\newline
+Include dependency graph for gpio.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{gpio_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ G\+P\+I\+O\+\_\+\+Set\+Direction} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin, uint8\+\_\+t dir)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{G\+P\+I\+O\+\_\+\+Set\+Direction()}{p.}{gpio_8h_aa49611cd9e8dd9469c5c91115ffc2cf4} sets a G\+P\+IO pin as input or output. \end{DoxyCompactList}\item 
+void \textbf{ G\+P\+I\+O\+\_\+\+Set\+Output\+Level} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin, uint8\+\_\+t level)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{G\+P\+I\+O\+\_\+\+Set\+Output\+Level()}{p.}{gpio_8h_afea01e26c18234f6483c555f1e2efd96} sets a G\+P\+IO pin\textquotesingle{}s output level. \end{DoxyCompactList}\item 
+void \textbf{ G\+P\+I\+O\+\_\+\+Toggle\+Output} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Function G\+P\+I\+O\+\_\+\+Toggle\+Output toggles a G\+P\+IO pin\textquotesingle{}s output level. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ G\+P\+I\+O\+\_\+\+Get\+Pin\+Level} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{G\+P\+I\+O\+\_\+\+Get\+Pin\+Level()}{p.}{gpio_8h_a328b2a57e66807bdf6fafd5110196fed} reads a G\+P\+IO pin\textquotesingle{}s data register. It returns the pin\textquotesingle{}s current logic level. \end{DoxyCompactList}\item 
+void \textbf{ G\+P\+I\+O\+\_\+\+Turn\+On\+L\+ED} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{G\+P\+I\+O\+\_\+\+Turn\+On\+L\+E\+D()}{p.}{gpio_8h_a77f99ecb0680b7dd8590d568ef1b1fce} turns a given L\+ED on. \end{DoxyCompactList}\item 
+void \textbf{ G\+P\+I\+O\+\_\+\+Turn\+Off\+L\+ED} (L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$gpio, uint8\+\_\+t pin)
+\begin{DoxyCompactList}\small\item\em Function \doxyref{G\+P\+I\+O\+\_\+\+Turn\+Off\+L\+E\+D()}{p.}{gpio_8h_a4db9e400f0ba808ee072c91426f03c0f} turns a given L\+ED on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{gpio_8c_a328b2a57e66807bdf6fafd5110196fed}} 
+\index{gpio.c@{gpio.c}!GPIO\_GetPinLevel@{GPIO\_GetPinLevel}}
+\index{GPIO\_GetPinLevel@{GPIO\_GetPinLevel}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_GetPinLevel()}
+{\footnotesize\ttfamily uint32\+\_\+t G\+P\+I\+O\+\_\+\+Get\+Pin\+Level (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{G\+P\+I\+O\+\_\+\+Get\+Pin\+Level()}{p.}{gpio_8h_a328b2a57e66807bdf6fafd5110196fed} reads a G\+P\+IO pin\textquotesingle{}s data register. It returns the pin\textquotesingle{}s current logic level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & to be read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/-\/$>$ L\+OW 1 -\/-\/$>$ H\+I\+GH 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file gpio.\+c.
+
+\mbox{\label{gpio_8c_aa49611cd9e8dd9469c5c91115ffc2cf4}} 
+\index{gpio.c@{gpio.c}!GPIO\_SetDirection@{GPIO\_SetDirection}}
+\index{GPIO\_SetDirection@{GPIO\_SetDirection}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_SetDirection()}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Set\+Direction (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{dir }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{G\+P\+I\+O\+\_\+\+Set\+Direction()}{p.}{gpio_8h_aa49611cd9e8dd9469c5c91115ffc2cf4} sets a G\+P\+IO pin as input or output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & to be set. \\
+\hline
+{\em dir} & the direction to be set\+: 0 -\/-\/$>$ I\+N\+P\+UT 1 -\/-\/$>$ O\+U\+T\+P\+UT \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file gpio.\+c.
+
+\mbox{\label{gpio_8c_afea01e26c18234f6483c555f1e2efd96}} 
+\index{gpio.c@{gpio.c}!GPIO\_SetOutputLevel@{GPIO\_SetOutputLevel}}
+\index{GPIO\_SetOutputLevel@{GPIO\_SetOutputLevel}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_SetOutputLevel()}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Set\+Output\+Level (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin,  }\item[{uint8\+\_\+t}]{level }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{G\+P\+I\+O\+\_\+\+Set\+Output\+Level()}{p.}{gpio_8h_afea01e26c18234f6483c555f1e2efd96} sets a G\+P\+IO pin\textquotesingle{}s output level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & to be set. \\
+\hline
+{\em level} & the output level 0 -\/-\/$>$ L\+OW 1 -\/-\/$>$ H\+I\+GH \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file gpio.\+c.
+
+\mbox{\label{gpio_8c_a0033008da275de13f8ff17a7ee8961f6}} 
+\index{gpio.c@{gpio.c}!GPIO\_ToggleOutput@{GPIO\_ToggleOutput}}
+\index{GPIO\_ToggleOutput@{GPIO\_ToggleOutput}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_ToggleOutput()}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Toggle\+Output (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Function G\+P\+I\+O\+\_\+\+Toggle\+Output toggles a G\+P\+IO pin\textquotesingle{}s output level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file gpio.\+c.
+
+\mbox{\label{gpio_8c_a4db9e400f0ba808ee072c91426f03c0f}} 
+\index{gpio.c@{gpio.c}!GPIO\_TurnOffLED@{GPIO\_TurnOffLED}}
+\index{GPIO\_TurnOffLED@{GPIO\_TurnOffLED}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_TurnOffLED()}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Turn\+Off\+L\+ED (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{G\+P\+I\+O\+\_\+\+Turn\+Off\+L\+E\+D()}{p.}{gpio_8h_a4db9e400f0ba808ee072c91426f03c0f} turns a given L\+ED on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & the led is connected with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Set the constant L\+O\+W\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+ED according to your L\+E\+Ds. 
+\end{DoxyNote}
+
+
+Definition at line 48 of file gpio.\+c.
+
+\mbox{\label{gpio_8c_a77f99ecb0680b7dd8590d568ef1b1fce}} 
+\index{gpio.c@{gpio.c}!GPIO\_TurnOnLED@{GPIO\_TurnOnLED}}
+\index{GPIO\_TurnOnLED@{GPIO\_TurnOnLED}!gpio.c@{gpio.c}}
+\doxysubsubsection{GPIO\_TurnOnLED()}
+{\footnotesize\ttfamily void G\+P\+I\+O\+\_\+\+Turn\+On\+L\+ED (\begin{DoxyParamCaption}\item[{L\+P\+C\+\_\+\+G\+P\+I\+O\+\_\+T $\ast$}]{gpio,  }\item[{uint8\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{G\+P\+I\+O\+\_\+\+Turn\+On\+L\+E\+D()}{p.}{gpio_8h_a77f99ecb0680b7dd8590d568ef1b1fce} turns a given L\+ED on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gpio} & register the pin belongs to. \\
+\hline
+{\em pin} & the led is connected with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Set the constant L\+O\+W\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+ED according to your L\+E\+Ds. 
+\end{DoxyNote}
+
+
+Definition at line 39 of file gpio.\+c.
+

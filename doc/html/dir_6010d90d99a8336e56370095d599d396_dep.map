@@ -1,0 +1,6 @@
+<map id="lpc1343_timer/inc" name="lpc1343_timer/inc">
+<area shape="rect" id="node1" href="dir_6010d90d99a8336e56370095d599d396.html" title="inc" alt="" coords="31,52,103,100"/>
+<area shape="rect" id="node2" href="dir_e5bdbe0c48fce72908adccfc62ec08c5.html" title="lpc1343_gpio" alt="" coords="17,148,116,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000023_000010.html" title="1" alt="" coords="71,122,79,137"/>
+<area shape="rect" id="clust1" href="dir_7cc7ed3ee2b422dab2c24d2e6b876c4d.html" title="lpc1343_timer" alt="" coords="16,16,119,111"/>
+</map>

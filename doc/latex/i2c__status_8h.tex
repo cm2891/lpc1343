@@ -1,0 +1,78 @@
+\doxysection{lpc1343\+\_\+i2c/inc/i2c\+\_\+status.h File Reference}
+\label{i2c__status_8h}\index{lpc1343\_i2c/inc/i2c\_status.h@{lpc1343\_i2c/inc/i2c\_status.h}}
+
+
+Header file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+status.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{i2c__status_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__status_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ I2\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}~(0x000000\+F8)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \textbf{ I2\+C\+\_\+get\+\_\+status} ()
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+get\+\_\+status retrieves the register I2\+C0\+S\+T\+AT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{i2c__status_8h_ada26c194db4a2e5b05470ecd565e2180}} 
+\index{i2c\_status.h@{i2c\_status.h}!I2C\_STATUS\_MASK@{I2C\_STATUS\_MASK}}
+\index{I2C\_STATUS\_MASK@{I2C\_STATUS\_MASK}!i2c\_status.h@{i2c\_status.h}}
+\doxysubsubsection{I2C\_STATUS\_MASK}
+{\footnotesize\ttfamily \#define I2\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~(0x000000\+F8)}
+
+Bitmask for register I2\+C0\+S\+T\+AT. 
+
+Definition at line 15 of file i2c\+\_\+status.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__status_8h_a2f702125d9e7badc0b14dcd56f044c97}} 
+\index{i2c\_status.h@{i2c\_status.h}!I2C\_get\_status@{I2C\_get\_status}}
+\index{I2C\_get\_status@{I2C\_get\_status}!i2c\_status.h@{i2c\_status.h}}
+\doxysubsubsection{I2C\_get\_status()}
+{\footnotesize\ttfamily uint32\+\_\+t I2\+C\+\_\+get\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+get\+\_\+status retrieves the register I2\+C0\+S\+T\+AT. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & register\textquotesingle{}s content. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file i2c\+\_\+status.\+c.
+

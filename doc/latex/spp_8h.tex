@@ -1,0 +1,433 @@
+\doxysection{lpc1343\+\_\+spp/inc/spp.h File Reference}
+\label{spp_8h}\index{lpc1343\_spp/inc/spp.h@{lpc1343\_spp/inc/spp.h}}
+
+
+Header file for L\+P\+C1343 S\+PI.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for spp.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{spp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ S\+P\+P\+\_\+\+S\+T\+A\+T\+US}
+\begin{DoxyCompactList}\small\item\em Structure \doxyref{S\+P\+P\+\_\+\+S\+T\+A\+T\+US}{p.}{struct_s_p_p___s_t_a_t_u_s} reflects the S\+S\+P0\+S\+SR register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+PI}~(0x0 $<$$<$ 4)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+TI}~(0x1 $<$$<$ 4)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+I\+C\+RO}~(0x2 $<$$<$ 4)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+L\+K\+\_\+\+P\+O\+L\+\_\+\+L\+OW}~(0 $<$$<$ 6)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+L\+K\+\_\+\+P\+O\+L\+\_\+\+H\+I\+GH}~(1 $<$$<$ 6)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+S\+Y\+S\+A\+H\+B\+C\+L\+K\+C\+T\+R\+L\+\_\+\+P\+O\+W\+ER}~(11U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+D\+S\+S\+\_\+\+L\+SB}~(0U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+F\+R\+F\+\_\+\+L\+SB}~(4U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+C\+P\+O\+L\+\_\+\+L\+SB}~(6U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+C\+P\+H\+A\+\_\+\+L\+SB}~(7U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+S\+C\+R\+\_\+\+L\+SB}~(8U)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+R\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x0000\+F\+F\+FF)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+C\+P\+S\+R\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x000000\+FF)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x0000\+F\+F\+FF)
+\item 
+\#define \textbf{ S\+P\+P\+\_\+\+D\+I\+V\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x000000\+FF)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE} \{ \newline
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+04\+\_\+\+B\+IT} = 0x3, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+05\+\_\+\+B\+IT} = 0x4, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+06\+\_\+\+B\+IT} = 0x5, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+07\+\_\+\+B\+IT} = 0x6, 
+\newline
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+08\+\_\+\+B\+IT} = 0x7, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+09\+\_\+\+B\+IT} = 0x8, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+10\+\_\+\+B\+IT} = 0x9, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+11\+\_\+\+B\+IT} = 0xA, 
+\newline
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+12\+\_\+\+B\+IT} = 0xB, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+13\+\_\+\+B\+IT} = 0xC, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+14\+\_\+\+B\+IT} = 0xD, 
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+15\+\_\+\+B\+IT} = 0xE, 
+\newline
+\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+16\+\_\+\+B\+IT} = 0xF
+ \}
+\begin{DoxyCompactList}\small\item\em The enums define the word size for the transfer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ S\+P\+P\+\_\+init} (\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE} dss, uint8\+\_\+t frf, Bool cpol, Bool cpha, uint8\+\_\+t scr, uint8\+\_\+t prescale\+\_\+val, uint8\+\_\+t clk\+\_\+div)
+\begin{DoxyCompactList}\small\item\em Function S\+P\+P\+\_\+init configures the L\+PC\textquotesingle{}s S\+PP unit. \end{DoxyCompactList}\item 
+void \textbf{ S\+P\+P\+\_\+write} (uint32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Function S\+P\+P\+\_\+write sends a 16-\/bit word to the S\+PP. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ S\+P\+P\+\_\+read} ()
+\begin{DoxyCompactList}\small\item\em Function S\+P\+P\+\_\+read reads a 16-\/bit word from the S\+PP. \end{DoxyCompactList}\item 
+Bool \textbf{ S\+P\+P\+\_\+get\+\_\+status} (\textbf{ S\+P\+P\+\_\+\+S\+T\+A\+T\+US} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Function S\+P\+P\+\_\+get\+\_\+status gets the status of the S\+PP from register {\bfseries{S\+S\+P0\+SR}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for L\+P\+C1343 S\+PI. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{spp_8h_a96452c3070072170925074d3e243d517}} 
+\index{spp.h@{spp.h}!SPP\_CLK\_POL\_HIGH@{SPP\_CLK\_POL\_HIGH}}
+\index{SPP\_CLK\_POL\_HIGH@{SPP\_CLK\_POL\_HIGH}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CLK\_POL\_HIGH}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+L\+K\+\_\+\+P\+O\+L\+\_\+\+H\+I\+GH~(1 $<$$<$ 6)}
+
+Defines the C\+LK polarity to be H\+I\+GH. 
+
+Definition at line 43 of file spp.\+h.
+
+\mbox{\label{spp_8h_a283089e096ac78f45072256009601a3f}} 
+\index{spp.h@{spp.h}!SPP\_CLK\_POL\_LOW@{SPP\_CLK\_POL\_LOW}}
+\index{SPP\_CLK\_POL\_LOW@{SPP\_CLK\_POL\_LOW}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CLK\_POL\_LOW}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+L\+K\+\_\+\+P\+O\+L\+\_\+\+L\+OW~(0 $<$$<$ 6)}
+
+Defines the C\+LK polarity to be L\+OW. 
+
+Definition at line 41 of file spp.\+h.
+
+\mbox{\label{spp_8h_acd74660ac5246de5c38150f7b216e477}} 
+\index{spp.h@{spp.h}!SPP\_CPSR\_MASK@{SPP\_CPSR\_MASK}}
+\index{SPP\_CPSR\_MASK@{SPP\_CPSR\_MASK}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CPSR\_MASK}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+P\+S\+R\+\_\+\+M\+A\+SK~((uint32\+\_\+t)0x000000\+FF)}
+
+Bitmask for C\+P\+SR. 
+
+Definition at line 66 of file spp.\+h.
+
+\mbox{\label{spp_8h_ac6a5cfb48f2003bf98f69c6aae3e1851}} 
+\index{spp.h@{spp.h}!SPP\_CR\_CPHA\_LSB@{SPP\_CR\_CPHA\_LSB}}
+\index{SPP\_CR\_CPHA\_LSB@{SPP\_CR\_CPHA\_LSB}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_CPHA\_LSB}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+C\+P\+H\+A\+\_\+\+L\+SB~(7U)}
+
+L\+SB of bitfield C\+P\+HA in the control register. 
+
+Definition at line 53 of file spp.\+h.
+
+\mbox{\label{spp_8h_aa14ec7b07416dc617c09e78cdef97108}} 
+\index{spp.h@{spp.h}!SPP\_CR\_CPOL\_LSB@{SPP\_CR\_CPOL\_LSB}}
+\index{SPP\_CR\_CPOL\_LSB@{SPP\_CR\_CPOL\_LSB}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_CPOL\_LSB}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+C\+P\+O\+L\+\_\+\+L\+SB~(6U)}
+
+L\+SB of bitfield C\+P\+OL in the control register. 
+
+Definition at line 51 of file spp.\+h.
+
+\mbox{\label{spp_8h_ae3cd82294dec6f3618ad5ca634651a4c}} 
+\index{spp.h@{spp.h}!SPP\_CR\_DSS\_LSB@{SPP\_CR\_DSS\_LSB}}
+\index{SPP\_CR\_DSS\_LSB@{SPP\_CR\_DSS\_LSB}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_DSS\_LSB}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+D\+S\+S\+\_\+\+L\+SB~(0U)}
+
+L\+SB of bitfield D\+SS in the control register. 
+
+Definition at line 47 of file spp.\+h.
+
+\mbox{\label{spp_8h_a5e214a0d95f3f5532b05206725075580}} 
+\index{spp.h@{spp.h}!SPP\_CR\_FRF\_LSB@{SPP\_CR\_FRF\_LSB}}
+\index{SPP\_CR\_FRF\_LSB@{SPP\_CR\_FRF\_LSB}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_FRF\_LSB}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+F\+R\+F\+\_\+\+L\+SB~(4U)}
+
+L\+SB of bitfield F\+RF in the control register. 
+
+Definition at line 49 of file spp.\+h.
+
+\mbox{\label{spp_8h_a344dfb7f183d172fa88e79293b737e1a}} 
+\index{spp.h@{spp.h}!SPP\_CR\_MASK@{SPP\_CR\_MASK}}
+\index{SPP\_CR\_MASK@{SPP\_CR\_MASK}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_MASK}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+M\+A\+SK~((uint32\+\_\+t)0x0000\+F\+F\+FF)}
+
+Bitmask for control register of S\+PP. The register has the following layout\+: [3\+:0] D\+SS [5\+:4] F\+RF [6\+:6] C\+P\+OL [7\+:7] C\+P\+HA [15\+:8] S\+CR [31\+:16] R\+E\+S\+E\+R\+V\+ED 
+
+Definition at line 64 of file spp.\+h.
+
+\mbox{\label{spp_8h_af9c1235a0c6299f2bb6fb5acca67a4f5}} 
+\index{spp.h@{spp.h}!SPP\_CR\_SCR\_LSB@{SPP\_CR\_SCR\_LSB}}
+\index{SPP\_CR\_SCR\_LSB@{SPP\_CR\_SCR\_LSB}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_CR\_SCR\_LSB}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+C\+R\+\_\+\+S\+C\+R\+\_\+\+L\+SB~(8U)}
+
+L\+SB of bitfield S\+CR in the control register. 
+
+Definition at line 55 of file spp.\+h.
+
+\mbox{\label{spp_8h_aaba0c490d2e2ccf1d148dbc153a24d52}} 
+\index{spp.h@{spp.h}!SPP\_DATA\_MASK@{SPP\_DATA\_MASK}}
+\index{SPP\_DATA\_MASK@{SPP\_DATA\_MASK}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_DATA\_MASK}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+SK~((uint32\+\_\+t)0x0000\+F\+F\+FF)}
+
+Bitmask for D\+A\+TA. 
+
+Definition at line 68 of file spp.\+h.
+
+\mbox{\label{spp_8h_a474598a371eabd975e781463258d4b3d}} 
+\index{spp.h@{spp.h}!SPP\_DIV\_MASK@{SPP\_DIV\_MASK}}
+\index{SPP\_DIV\_MASK@{SPP\_DIV\_MASK}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_DIV\_MASK}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+D\+I\+V\+\_\+\+M\+A\+SK~((uint32\+\_\+t)0x000000\+FF)}
+
+Bitmask for D\+IV in S\+S\+P0\+C\+L\+K\+D\+IV. 
+
+Definition at line 70 of file spp.\+h.
+
+\mbox{\label{spp_8h_a46ef45ac07ceeaf90fa8c15363f021c2}} 
+\index{spp.h@{spp.h}!SPP\_FORMAT\_MICRO@{SPP\_FORMAT\_MICRO}}
+\index{SPP\_FORMAT\_MICRO@{SPP\_FORMAT\_MICRO}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_FORMAT\_MICRO}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+M\+I\+C\+RO~(0x2 $<$$<$ 4)}
+
+The S\+PP shall communicate using the M\+I\+C\+RO format. 
+
+Definition at line 39 of file spp.\+h.
+
+\mbox{\label{spp_8h_a6ad735b5793e9e40804e2bc78896ae02}} 
+\index{spp.h@{spp.h}!SPP\_FORMAT\_SPI@{SPP\_FORMAT\_SPI}}
+\index{SPP\_FORMAT\_SPI@{SPP\_FORMAT\_SPI}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_FORMAT\_SPI}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+PI~(0x0 $<$$<$ 4)}
+
+The S\+PP shall communicate using the S\+PI format. 
+
+Definition at line 35 of file spp.\+h.
+
+\mbox{\label{spp_8h_a21d970da89128175eebdd2fa172394b6}} 
+\index{spp.h@{spp.h}!SPP\_FORMAT\_TI@{SPP\_FORMAT\_TI}}
+\index{SPP\_FORMAT\_TI@{SPP\_FORMAT\_TI}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_FORMAT\_TI}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+TI~(0x1 $<$$<$ 4)}
+
+The S\+PP shall communicate using the TI format. 
+
+Definition at line 37 of file spp.\+h.
+
+\mbox{\label{spp_8h_ac2696fbe56d47567c26cfc2fe2277137}} 
+\index{spp.h@{spp.h}!SPP\_SYSAHBCLKCTRL\_POWER@{SPP\_SYSAHBCLKCTRL\_POWER}}
+\index{SPP\_SYSAHBCLKCTRL\_POWER@{SPP\_SYSAHBCLKCTRL\_POWER}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_SYSAHBCLKCTRL\_POWER}
+{\footnotesize\ttfamily \#define S\+P\+P\+\_\+\+S\+Y\+S\+A\+H\+B\+C\+L\+K\+C\+T\+R\+L\+\_\+\+P\+O\+W\+ER~(11U)}
+
+Power bit for S\+PP module in S\+Y\+S\+A\+H\+B\+C\+L\+K\+C\+T\+RL 
+
+Definition at line 45 of file spp.\+h.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46}} 
+\index{spp.h@{spp.h}!SPP\_WORD\_SIZE@{SPP\_WORD\_SIZE}}
+\index{SPP\_WORD\_SIZE@{SPP\_WORD\_SIZE}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_WORD\_SIZE}
+{\footnotesize\ttfamily enum \textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE}}
+
+
+
+The enums define the word size for the transfer. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_04\_BIT@{SPP\_WORD\_SIZE\_04\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_04\_BIT@{SPP\_WORD\_SIZE\_04\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a3ebf0e679699c6ef33f63b13cb27bb03}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+04\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_05\_BIT@{SPP\_WORD\_SIZE\_05\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_05\_BIT@{SPP\_WORD\_SIZE\_05\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a7549f9afc4068ef206b8ac9b61667bcb}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+05\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_06\_BIT@{SPP\_WORD\_SIZE\_06\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_06\_BIT@{SPP\_WORD\_SIZE\_06\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46aafbc41b6d15f990074eb9795a1eeeea6}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+06\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_07\_BIT@{SPP\_WORD\_SIZE\_07\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_07\_BIT@{SPP\_WORD\_SIZE\_07\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46aafa3a209bb718d030a1f00bd160898fc}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+07\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_08\_BIT@{SPP\_WORD\_SIZE\_08\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_08\_BIT@{SPP\_WORD\_SIZE\_08\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a0bc2a5853f18b9f97365e5b80722a8c7}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+08\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_09\_BIT@{SPP\_WORD\_SIZE\_09\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_09\_BIT@{SPP\_WORD\_SIZE\_09\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a7afef62ed1530d4c982845c400fc111b}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+09\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_10\_BIT@{SPP\_WORD\_SIZE\_10\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_10\_BIT@{SPP\_WORD\_SIZE\_10\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46ae3f50344153b32fc9e037edce67fe4b5}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+10\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_11\_BIT@{SPP\_WORD\_SIZE\_11\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_11\_BIT@{SPP\_WORD\_SIZE\_11\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a7614e03dac8e074be24b4d57fdb8c9cd}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+11\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_12\_BIT@{SPP\_WORD\_SIZE\_12\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_12\_BIT@{SPP\_WORD\_SIZE\_12\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46ab0e26db8757f742bf3d31a47857a4c7a}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+12\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_13\_BIT@{SPP\_WORD\_SIZE\_13\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_13\_BIT@{SPP\_WORD\_SIZE\_13\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46ad13905bfbcd11a13cf84f1ac09290c06}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+13\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_14\_BIT@{SPP\_WORD\_SIZE\_14\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_14\_BIT@{SPP\_WORD\_SIZE\_14\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a3e2dd9322048941b8a95a6b07bb830c9}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+14\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_15\_BIT@{SPP\_WORD\_SIZE\_15\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_15\_BIT@{SPP\_WORD\_SIZE\_15\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a60d81c0dba9bf934935f3593ca2ef643}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+15\+\_\+\+B\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPP\_WORD\_SIZE\_16\_BIT@{SPP\_WORD\_SIZE\_16\_BIT}!spp.h@{spp.h}}\index{spp.h@{spp.h}!SPP\_WORD\_SIZE\_16\_BIT@{SPP\_WORD\_SIZE\_16\_BIT}}}\mbox{\label{spp_8h_ab296810a48f5c4b62fd6e29ebde11e46a87879ce978476f13af482deadda68476}} 
+S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+Z\+E\+\_\+16\+\_\+\+B\+IT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 16 of file spp.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{spp_8h_a3f3b4defa833ab5b1484298aec95dff0}} 
+\index{spp.h@{spp.h}!SPP\_get\_status@{SPP\_get\_status}}
+\index{SPP\_get\_status@{SPP\_get\_status}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_get\_status()}
+{\footnotesize\ttfamily Bool S\+P\+P\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{\textbf{ S\+P\+P\+\_\+\+S\+T\+A\+T\+US} $\ast$}]{status }\end{DoxyParamCaption})}
+
+
+
+Function S\+P\+P\+\_\+get\+\_\+status gets the status of the S\+PP from register {\bfseries{S\+S\+P0\+SR}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em status} & a pointer to a structure {\bfseries{\doxyref{S\+P\+P\+\_\+\+S\+T\+A\+T\+US}{p.}{struct_s_p_p___s_t_a_t_u_s}}}, where the regiter\textquotesingle{}s values will be stored to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & Retrieving status failed. \\
+\hline
+{\em T\+R\+UE} & Retrieving status succeeded. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 11 of file spp\+\_\+get\+\_\+status.\+c.
+
+\mbox{\label{spp_8h_ac03d83c19ae9b1a0a3774c7f6b9a4ec7}} 
+\index{spp.h@{spp.h}!SPP\_init@{SPP\_init}}
+\index{SPP\_init@{SPP\_init}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_init()}
+{\footnotesize\ttfamily void S\+P\+P\+\_\+init (\begin{DoxyParamCaption}\item[{\textbf{ S\+P\+P\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE}}]{dss,  }\item[{uint8\+\_\+t}]{frf,  }\item[{Bool}]{cpol,  }\item[{Bool}]{cpha,  }\item[{uint8\+\_\+t}]{scr,  }\item[{uint8\+\_\+t}]{prescale\+\_\+val,  }\item[{uint8\+\_\+t}]{clk\+\_\+div }\end{DoxyParamCaption})}
+
+
+
+Function S\+P\+P\+\_\+init configures the L\+PC\textquotesingle{}s S\+PP unit. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em frf} & Defines the frame format (S\+PI, TI, M\+I\+C\+RO) \\
+\hline
+\mbox{\texttt{ in}}  & {\em cpol} & Defines the clock out polarity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em cpha} & Defines the clock out phase. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scr} & Defines the serial clock rate. \\
+\hline
+\mbox{\texttt{ in}}  & {\em prescale\+\_\+val} & Defines the prescaler value of register C\+P\+S\+D\+V\+SR. \\
+\hline
+\mbox{\texttt{ in}}  & {\em clk\+\_\+div} & Defines the clock divider value of register D\+IV. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file spp\+\_\+init.\+c.
+
+\mbox{\label{spp_8h_ac7473567b83e5913d21552d5b3743e00}} 
+\index{spp.h@{spp.h}!SPP\_read@{SPP\_read}}
+\index{SPP\_read@{SPP\_read}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_read()}
+{\footnotesize\ttfamily uint32\+\_\+t S\+P\+P\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function S\+P\+P\+\_\+read reads a 16-\/bit word from the S\+PP. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & 16-\/bit word from the S\+PP. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file spp\+\_\+read.\+c.
+
+\mbox{\label{spp_8h_a4dd89cc35b631a751bd5b41211ad720d}} 
+\index{spp.h@{spp.h}!SPP\_write@{SPP\_write}}
+\index{SPP\_write@{SPP\_write}!spp.h@{spp.h}}
+\doxysubsubsection{SPP\_write()}
+{\footnotesize\ttfamily void S\+P\+P\+\_\+write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Function S\+P\+P\+\_\+write sends a 16-\/bit word to the S\+PP. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & the data to be written. The high word will be masked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file spp\+\_\+write.\+c.
+

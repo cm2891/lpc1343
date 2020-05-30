@@ -1,0 +1,7 @@
+<map id="lpc1343_i2c/inc/i2c_control.h" name="lpc1343_i2c/inc/i2c_control.h">
+<area shape="rect" id="node1" title="Header file for I2C." alt="" coords="243,5,377,47"/>
+<area shape="rect" id="node2" href="$i2c__control_8c.html" title="Source file for I2C." alt="" coords="5,95,140,136"/>
+<area shape="rect" id="node3" href="$i2c__mode_8c.html" title="Source file for I2C." alt="" coords="164,95,299,136"/>
+<area shape="rect" id="node4" href="$i2c__read_8c.html" title="Source file for I2C." alt="" coords="323,95,457,136"/>
+<area shape="rect" id="node5" href="$i2c__write_8c.html" title="Source file for I2C." alt="" coords="481,95,616,136"/>
+</map>

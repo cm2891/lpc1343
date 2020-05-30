@@ -1,0 +1,96 @@
+\doxysection{lpc1343\+\_\+uart/src/uart.c File Reference}
+\label{uart_8c}\index{lpc1343\_uart/src/uart.c@{lpc1343\_uart/src/uart.c}}
+
+
+U\+A\+RT source file.  
+
+
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+Include dependency graph for uart.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{uart_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ U\+A\+R\+T\+\_\+init} (void)
+\begin{DoxyCompactList}\small\item\em Function init\+U\+A\+R\+T() initializes the U\+A\+RT with a baudrate of 9600 and starts it. \end{DoxyCompactList}\item 
+void \textbf{ U\+A\+R\+T\+\_\+write} (uint32\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Function write\+U\+A\+R\+T() sends data via the U\+A\+RT. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ U\+A\+R\+T\+\_\+read} (void)
+\begin{DoxyCompactList}\small\item\em Function read\+U\+A\+R\+T() reads data via the U\+A\+RT. \end{DoxyCompactList}\item 
+void \textbf{ U\+A\+R\+T\+\_\+\+I\+R\+Q\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Function \doxyref{U\+A\+R\+T\+\_\+\+I\+R\+Q\+Handler()}{p.}{uart_8c_ac02d2de9aee4516d8d21f9948893a7b9} implements the U\+A\+RT interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+U\+A\+RT source file. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{uart_8c_ab60a36f7295d704926120d22f806dcd1}} 
+\index{uart.c@{uart.c}!UART\_init@{UART\_init}}
+\index{UART\_init@{UART\_init}!uart.c@{uart.c}}
+\doxysubsubsection{UART\_init()}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function init\+U\+A\+R\+T() initializes the U\+A\+RT with a baudrate of 9600 and starts it. 
+
+
+
+Definition at line 9 of file uart.\+c.
+
+\mbox{\label{uart_8c_ac02d2de9aee4516d8d21f9948893a7b9}} 
+\index{uart.c@{uart.c}!UART\_IRQHandler@{UART\_IRQHandler}}
+\index{UART\_IRQHandler@{UART\_IRQHandler}!uart.c@{uart.c}}
+\doxysubsubsection{UART\_IRQHandler()}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function \doxyref{U\+A\+R\+T\+\_\+\+I\+R\+Q\+Handler()}{p.}{uart_8c_ac02d2de9aee4516d8d21f9948893a7b9} implements the U\+A\+RT interrupt handler. 
+
+
+
+Definition at line 50 of file uart.\+c.
+
+\mbox{\label{uart_8c_ae03156b01b790cd2dbbac2237ca38e0b}} 
+\index{uart.c@{uart.c}!UART\_read@{UART\_read}}
+\index{UART\_read@{UART\_read}!uart.c@{uart.c}}
+\doxysubsubsection{UART\_read()}
+{\footnotesize\ttfamily uint32\+\_\+t U\+A\+R\+T\+\_\+read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Function read\+U\+A\+R\+T() reads data via the U\+A\+RT. 
+
+\begin{DoxyReturn}{Returns}
+returns the received data, or zero. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file uart.\+c.
+
+\mbox{\label{uart_8c_a21eac02af8cb0d4c96f864b97d9cc14f}} 
+\index{uart.c@{uart.c}!UART\_write@{UART\_write}}
+\index{UART\_write@{UART\_write}!uart.c@{uart.c}}
+\doxysubsubsection{UART\_write()}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Function write\+U\+A\+R\+T() sends data via the U\+A\+RT. 
+
+
+
+Definition at line 37 of file uart.\+c.
+

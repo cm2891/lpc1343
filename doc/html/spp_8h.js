@@ -1,0 +1,38 @@
+var spp_8h =
+[
+    [ "SPP_STATUS", "struct_s_p_p___s_t_a_t_u_s.html", "struct_s_p_p___s_t_a_t_u_s" ],
+    [ "SPP_CLK_POL_HIGH", "spp_8h.html#a96452c3070072170925074d3e243d517", null ],
+    [ "SPP_CLK_POL_LOW", "spp_8h.html#a283089e096ac78f45072256009601a3f", null ],
+    [ "SPP_CPSR_MASK", "spp_8h.html#acd74660ac5246de5c38150f7b216e477", null ],
+    [ "SPP_CR_CPHA_LSB", "spp_8h.html#ac6a5cfb48f2003bf98f69c6aae3e1851", null ],
+    [ "SPP_CR_CPOL_LSB", "spp_8h.html#aa14ec7b07416dc617c09e78cdef97108", null ],
+    [ "SPP_CR_DSS_LSB", "spp_8h.html#ae3cd82294dec6f3618ad5ca634651a4c", null ],
+    [ "SPP_CR_FRF_LSB", "spp_8h.html#a5e214a0d95f3f5532b05206725075580", null ],
+    [ "SPP_CR_MASK", "spp_8h.html#a344dfb7f183d172fa88e79293b737e1a", null ],
+    [ "SPP_CR_SCR_LSB", "spp_8h.html#af9c1235a0c6299f2bb6fb5acca67a4f5", null ],
+    [ "SPP_DATA_MASK", "spp_8h.html#aaba0c490d2e2ccf1d148dbc153a24d52", null ],
+    [ "SPP_DIV_MASK", "spp_8h.html#a474598a371eabd975e781463258d4b3d", null ],
+    [ "SPP_FORMAT_MICRO", "spp_8h.html#a46ef45ac07ceeaf90fa8c15363f021c2", null ],
+    [ "SPP_FORMAT_SPI", "spp_8h.html#a6ad735b5793e9e40804e2bc78896ae02", null ],
+    [ "SPP_FORMAT_TI", "spp_8h.html#a21d970da89128175eebdd2fa172394b6", null ],
+    [ "SPP_SYSAHBCLKCTRL_POWER", "spp_8h.html#ac2696fbe56d47567c26cfc2fe2277137", null ],
+    [ "SPP_WORD_SIZE", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46", [
+      [ "SPP_WORD_SIZE_04_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a3ebf0e679699c6ef33f63b13cb27bb03", null ],
+      [ "SPP_WORD_SIZE_05_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a7549f9afc4068ef206b8ac9b61667bcb", null ],
+      [ "SPP_WORD_SIZE_06_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46aafbc41b6d15f990074eb9795a1eeeea6", null ],
+      [ "SPP_WORD_SIZE_07_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46aafa3a209bb718d030a1f00bd160898fc", null ],
+      [ "SPP_WORD_SIZE_08_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a0bc2a5853f18b9f97365e5b80722a8c7", null ],
+      [ "SPP_WORD_SIZE_09_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a7afef62ed1530d4c982845c400fc111b", null ],
+      [ "SPP_WORD_SIZE_10_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46ae3f50344153b32fc9e037edce67fe4b5", null ],
+      [ "SPP_WORD_SIZE_11_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a7614e03dac8e074be24b4d57fdb8c9cd", null ],
+      [ "SPP_WORD_SIZE_12_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46ab0e26db8757f742bf3d31a47857a4c7a", null ],
+      [ "SPP_WORD_SIZE_13_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46ad13905bfbcd11a13cf84f1ac09290c06", null ],
+      [ "SPP_WORD_SIZE_14_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a3e2dd9322048941b8a95a6b07bb830c9", null ],
+      [ "SPP_WORD_SIZE_15_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a60d81c0dba9bf934935f3593ca2ef643", null ],
+      [ "SPP_WORD_SIZE_16_BIT", "spp_8h.html#ab296810a48f5c4b62fd6e29ebde11e46a87879ce978476f13af482deadda68476", null ]
+    ] ],
+    [ "SPP_get_status", "spp_8h.html#a3f3b4defa833ab5b1484298aec95dff0", null ],
+    [ "SPP_init", "spp_8h.html#ac03d83c19ae9b1a0a3774c7f6b9a4ec7", null ],
+    [ "SPP_read", "spp_8h.html#ac7473567b83e5913d21552d5b3743e00", null ],
+    [ "SPP_write", "spp_8h.html#a4dd89cc35b631a751bd5b41211ad720d", null ]
+];

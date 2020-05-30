@@ -1,0 +1,133 @@
+\doxysection{lpc1343\+\_\+i2c/src/i2c\+\_\+control.c File Reference}
+\label{i2c__control_8c}\index{lpc1343\_i2c/src/i2c\_control.c@{lpc1343\_i2c/src/i2c\_control.c}}
+
+
+Source file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}i2c\+\_\+control.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+control.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__control_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ I2\+C\+\_\+start} ()
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+start sets bit {\bfseries{I2\+EN}} in register {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} to start the I2C communication. \end{DoxyCompactList}\item 
+void \textbf{ I2\+C\+\_\+stop} ()
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+stop sets bit {\bfseries{I2\+EN}} in register {\bfseries{I2\+C0\+C\+O\+N\+C\+LR}} to stop the I2C communication. \end{DoxyCompactList}\item 
+Bool \textbf{ I2\+C\+\_\+write\+\_\+ctrl\+\_\+regs} (\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG} $\ast$set, \textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG} $\ast$clr)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+write\+\_\+ctrl\+\_\+set\+\_\+reg configures the {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} register. \end{DoxyCompactList}\item 
+Bool \textbf{ I2\+C\+\_\+read\+\_\+ctrl\+\_\+regs} (\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG} $\ast$set, \textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG} $\ast$clr)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+read\+\_\+ctrl\+\_\+set\+\_\+reg reads the {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Source file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__control_8c_af1991290740e17517eccaf9576cd1eeb}} 
+\index{i2c\_control.c@{i2c\_control.c}!I2C\_read\_ctrl\_regs@{I2C\_read\_ctrl\_regs}}
+\index{I2C\_read\_ctrl\_regs@{I2C\_read\_ctrl\_regs}!i2c\_control.c@{i2c\_control.c}}
+\doxysubsubsection{I2C\_read\_ctrl\_regs()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+read\+\_\+ctrl\+\_\+regs (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG} $\ast$}]{set,  }\item[{\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG} $\ast$}]{clr }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+read\+\_\+ctrl\+\_\+set\+\_\+reg reads the {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} register. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em set} & a pointer to structure {\bfseries{\doxyref{I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG}{p.}{struct_i2_c___c_t_r_l___s_e_t___r_e_g}}}, where the values for each bit of {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} will be stored to. \\
+\hline
+\mbox{\texttt{ out}}  & {\em clr} & a pointer to structure {\bfseries{I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG}}, where the values for each bit of {\bfseries{I2\+C0\+C\+O\+N\+C\+LR}} will be stored to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & reading failed \\
+\hline
+{\em T\+R\+UE} & reading was successful \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 40 of file i2c\+\_\+control.\+c.
+
+\mbox{\label{i2c__control_8c_a263c74ce484e3680c05a9118707fadb7}} 
+\index{i2c\_control.c@{i2c\_control.c}!I2C\_start@{I2C\_start}}
+\index{I2C\_start@{I2C\_start}!i2c\_control.c@{i2c\_control.c}}
+\doxysubsubsection{I2C\_start()}
+{\footnotesize\ttfamily void I2\+C\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+start sets bit {\bfseries{I2\+EN}} in register {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} to start the I2C communication. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file i2c\+\_\+control.\+c.
+
+\mbox{\label{i2c__control_8c_af8dcc1bcb3e1c6c0fcdca4cf599a239b}} 
+\index{i2c\_control.c@{i2c\_control.c}!I2C\_stop@{I2C\_stop}}
+\index{I2C\_stop@{I2C\_stop}!i2c\_control.c@{i2c\_control.c}}
+\doxysubsubsection{I2C\_stop()}
+{\footnotesize\ttfamily void I2\+C\+\_\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+stop sets bit {\bfseries{I2\+EN}} in register {\bfseries{I2\+C0\+C\+O\+N\+C\+LR}} to stop the I2C communication. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file i2c\+\_\+control.\+c.
+
+\mbox{\label{i2c__control_8c_ad9c6dbadd0685c96ab5b6dae15be8ae9}} 
+\index{i2c\_control.c@{i2c\_control.c}!I2C\_write\_ctrl\_regs@{I2C\_write\_ctrl\_regs}}
+\index{I2C\_write\_ctrl\_regs@{I2C\_write\_ctrl\_regs}!i2c\_control.c@{i2c\_control.c}}
+\doxysubsubsection{I2C\_write\_ctrl\_regs()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+write\+\_\+ctrl\+\_\+regs (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG} $\ast$}]{set,  }\item[{\textbf{ I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG} $\ast$}]{clr }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+write\+\_\+ctrl\+\_\+set\+\_\+reg configures the {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}} register. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em set} & a pointer to structure {\bfseries{\doxyref{I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+S\+E\+T\+\_\+\+R\+EG}{p.}{struct_i2_c___c_t_r_l___s_e_t___r_e_g}}}, which holds the values for each bit of {\bfseries{I2\+C0\+C\+O\+N\+S\+ET}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em clr} & a pointer to structure {\bfseries{I2\+C\+\_\+\+C\+T\+R\+L\+\_\+\+C\+L\+R\+\_\+\+R\+EG}}, which holds the values for each bit of {\bfseries{I2\+C0\+C\+O\+N\+C\+LR}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & configuration failed \\
+\hline
+{\em T\+R\+UE} & configuration was successful \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 19 of file i2c\+\_\+control.\+c.
+

@@ -1,0 +1,47 @@
+\doxysection{lpc1343\+\_\+spp/src/spp\+\_\+get\+\_\+status.c File Reference}
+\label{spp__get__status_8c}\index{lpc1343\_spp/src/spp\_get\_status.c@{lpc1343\_spp/src/spp\_get\_status.c}}
+{\ttfamily \#include \char`\"{}spp.\+h\char`\"{}}\newline
+Include dependency graph for spp\+\_\+get\+\_\+status.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{spp__get__status_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ S\+P\+P\+\_\+get\+\_\+status} (\textbf{ S\+P\+P\+\_\+\+S\+T\+A\+T\+US} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Function S\+P\+P\+\_\+get\+\_\+status gets the status of the S\+PP from register {\bfseries{S\+S\+P0\+SR}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{spp__get__status_8c_a3f3b4defa833ab5b1484298aec95dff0}} 
+\index{spp\_get\_status.c@{spp\_get\_status.c}!SPP\_get\_status@{SPP\_get\_status}}
+\index{SPP\_get\_status@{SPP\_get\_status}!spp\_get\_status.c@{spp\_get\_status.c}}
+\doxysubsubsection{SPP\_get\_status()}
+{\footnotesize\ttfamily Bool S\+P\+P\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{\textbf{ S\+P\+P\+\_\+\+S\+T\+A\+T\+US} $\ast$}]{status }\end{DoxyParamCaption})}
+
+
+
+Function S\+P\+P\+\_\+get\+\_\+status gets the status of the S\+PP from register {\bfseries{S\+S\+P0\+SR}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em status} & a pointer to a structure {\bfseries{\doxyref{S\+P\+P\+\_\+\+S\+T\+A\+T\+US}{p.}{struct_s_p_p___s_t_a_t_u_s}}}, where the regiter\textquotesingle{}s values will be stored to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & Retrieving status failed. \\
+\hline
+{\em T\+R\+UE} & Retrieving status succeeded. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 11 of file spp\+\_\+get\+\_\+status.\+c.
+

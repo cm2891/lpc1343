@@ -1,0 +1,84 @@
+\doxysection{lpc1343\+\_\+i2c/inc/i2c\+\_\+read.h File Reference}
+\label{i2c__read_8h}\index{lpc1343\_i2c/inc/i2c\_read.h@{lpc1343\_i2c/inc/i2c\_read.h}}
+
+
+Header file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+read.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{i2c__read_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__read_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \textbf{ I2\+C\+\_\+read} ()
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+read reads one byte from the I2C bus. The I2C module must be configured beforehand. Although the L\+PC register {\bfseries{I2\+C0\+D\+AT}} is 32-\/bit wide, only one byte can be read. The function takes care to mask the data accordingly. \end{DoxyCompactList}\item 
+uint32\+\_\+t \textbf{ I2\+C\+\_\+get\+\_\+data\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+get\+\_\+data\+\_\+buffer reads one byte from register {\bfseries{I2\+C0\+D\+A\+T\+A\+\_\+\+B\+U\+F\+F\+ER}}. The I2C module must be configured beforehand. Although the register is 32-\/bit wide, only one byte can be read. The function takes care to mask the data accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__read_8h_acc9fd44693b65dd46937c48b9b9867ae}} 
+\index{i2c\_read.h@{i2c\_read.h}!I2C\_get\_data\_buffer@{I2C\_get\_data\_buffer}}
+\index{I2C\_get\_data\_buffer@{I2C\_get\_data\_buffer}!i2c\_read.h@{i2c\_read.h}}
+\doxysubsubsection{I2C\_get\_data\_buffer()}
+{\footnotesize\ttfamily uint32\+\_\+t I2\+C\+\_\+get\+\_\+data\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+get\+\_\+data\+\_\+buffer reads one byte from register {\bfseries{I2\+C0\+D\+A\+T\+A\+\_\+\+B\+U\+F\+F\+ER}}. The I2C module must be configured beforehand. Although the register is 32-\/bit wide, only one byte can be read. The function takes care to mask the data accordingly. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & read byte from the data buffer. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 15 of file i2c\+\_\+read.\+c.
+
+\mbox{\label{i2c__read_8h_a5af1d3d232fe97694b9125d447a1cae1}} 
+\index{i2c\_read.h@{i2c\_read.h}!I2C\_read@{I2C\_read}}
+\index{I2C\_read@{I2C\_read}!i2c\_read.h@{i2c\_read.h}}
+\doxysubsubsection{I2C\_read()}
+{\footnotesize\ttfamily uint32\+\_\+t I2\+C\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+read reads one byte from the I2C bus. The I2C module must be configured beforehand. Although the L\+PC register {\bfseries{I2\+C0\+D\+AT}} is 32-\/bit wide, only one byte can be read. The function takes care to mask the data accordingly. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & read byte. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 10 of file i2c\+\_\+read.\+c.
+

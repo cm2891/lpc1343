@@ -1,0 +1,103 @@
+\doxysection{lpc1343\+\_\+i2c/inc/i2c\+\_\+monitor.h File Reference}
+\label{i2c__monitor_8h}\index{lpc1343\_i2c/inc/i2c\_monitor.h@{lpc1343\_i2c/inc/i2c\_monitor.h}}
+
+
+Header file for I2C.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for i2c\+\_\+monitor.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{i2c__monitor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{i2c__monitor_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG}
+\begin{DoxyCompactList}\small\item\em Structure \doxyref{I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG}{p.}{struct_i2_c___m_o_n_i_t_o_r___r_e_g} reflects the register I2\+C0\+M\+M\+C\+T\+RL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bool \textbf{ I2\+C\+\_\+set\+\_\+monitor} (\textbf{ I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG} $\ast$reg)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+set\+\_\+monitor configures the {\bfseries{I2\+C0\+M\+M\+C\+T\+RL}} register. \end{DoxyCompactList}\item 
+Bool \textbf{ I2\+C\+\_\+get\+\_\+monitor} (\textbf{ I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG} $\ast$reg)
+\begin{DoxyCompactList}\small\item\em Function I2\+C\+\_\+get\+\_\+monitor gets the values of {\bfseries{I2\+C0\+M\+M\+C\+T\+RL}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for I2C. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{i2c__monitor_8h_a414821a0f62274ca2f7c237fafa3896b}} 
+\index{i2c\_monitor.h@{i2c\_monitor.h}!I2C\_get\_monitor@{I2C\_get\_monitor}}
+\index{I2C\_get\_monitor@{I2C\_get\_monitor}!i2c\_monitor.h@{i2c\_monitor.h}}
+\doxysubsubsection{I2C\_get\_monitor()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+get\+\_\+monitor (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG} $\ast$}]{reg }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+get\+\_\+monitor gets the values of {\bfseries{I2\+C0\+M\+M\+C\+T\+RL}} register. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em reg} & pointer to a structure where the configuration values will be writen to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & configuration failed \\
+\hline
+{\em T\+R\+UE} & configuration succeeded \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 15 of file i2c\+\_\+monitor.\+c.
+
+\mbox{\label{i2c__monitor_8h_aa828a7001002773e78ba2dbef8f06570}} 
+\index{i2c\_monitor.h@{i2c\_monitor.h}!I2C\_set\_monitor@{I2C\_set\_monitor}}
+\index{I2C\_set\_monitor@{I2C\_set\_monitor}!i2c\_monitor.h@{i2c\_monitor.h}}
+\doxysubsubsection{I2C\_set\_monitor()}
+{\footnotesize\ttfamily Bool I2\+C\+\_\+set\+\_\+monitor (\begin{DoxyParamCaption}\item[{\textbf{ I2\+C\+\_\+\+M\+O\+N\+I\+T\+O\+R\+\_\+\+R\+EG} $\ast$}]{reg }\end{DoxyParamCaption})}
+
+
+
+Function I2\+C\+\_\+set\+\_\+monitor configures the {\bfseries{I2\+C0\+M\+M\+C\+T\+RL}} register. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em reg} & pointer to a structure holding the configuration values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+A\+L\+SE} & configuration failed \\
+\hline
+{\em T\+R\+UE} & configuration succeeded \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file i2c\+\_\+monitor.\+c.
+

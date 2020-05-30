@@ -1,0 +1,131 @@
+\doxysection{lpc1343\+\_\+iocon/inc/iocon.h File Reference}
+\label{iocon_8h}\index{lpc1343\_iocon/inc/iocon.h@{lpc1343\_iocon/inc/iocon.h}}
+
+
+Header file for L\+P\+C1343 I\+O\+C\+ON.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+Include dependency graph for iocon.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{iocon_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{iocon_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ I\+O\+C\+O\+N\+\_\+\+F\+U\+N\+C\+\_\+\+L\+SB}~(0U)
+\item 
+\#define \textbf{ I\+O\+C\+O\+N\+\_\+\+M\+O\+D\+E\+\_\+\+L\+SB}~(3U)
+\item 
+\#define \textbf{ I\+O\+C\+O\+N\+\_\+\+H\+Y\+S\+\_\+\+L\+SB}~(5U)
+\item 
+\#define \textbf{ I\+O\+C\+O\+N\+\_\+\+O\+D\+\_\+\+L\+SB}~(10U)
+\item 
+\#define \textbf{ I\+O\+C\+O\+N\+\_\+\+M\+A\+SK}~((uint32\+\_\+t)0x0000043F)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ I\+O\+C\+O\+N\+\_\+init} (C\+H\+I\+P\+\_\+\+I\+O\+C\+O\+N\+\_\+\+P\+I\+O\+\_\+T pin, uint8\+\_\+t func, uint8\+\_\+t mode, Bool hysteresis, Bool od)
+\begin{DoxyCompactList}\small\item\em Function I\+O\+C\+O\+N\+\_\+init configures a G\+P\+IO pin to the needed functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for L\+P\+C1343 I\+O\+C\+ON. 
+
+\begin{DoxyAuthor}{Author}
+Christian Matar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\label{iocon_8h_a5e600487cd46712336c9281ccfff58bf}} 
+\index{iocon.h@{iocon.h}!IOCON\_FUNC\_LSB@{IOCON\_FUNC\_LSB}}
+\index{IOCON\_FUNC\_LSB@{IOCON\_FUNC\_LSB}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_FUNC\_LSB}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+\_\+\+F\+U\+N\+C\+\_\+\+L\+SB~(0U)}
+
+L\+SB of bitfield F\+U\+NC [2\+:0] 
+
+Definition at line 14 of file iocon.\+h.
+
+\mbox{\label{iocon_8h_a9d1f47d122c32f6773bdd8cd5c411892}} 
+\index{iocon.h@{iocon.h}!IOCON\_HYS\_LSB@{IOCON\_HYS\_LSB}}
+\index{IOCON\_HYS\_LSB@{IOCON\_HYS\_LSB}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_HYS\_LSB}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+\_\+\+H\+Y\+S\+\_\+\+L\+SB~(5U)}
+
+L\+SB of bit H\+YS [5\+:5] 
+
+Definition at line 18 of file iocon.\+h.
+
+\mbox{\label{iocon_8h_ab04eb52a3bba37cd25dbb2343d38f684}} 
+\index{iocon.h@{iocon.h}!IOCON\_MASK@{IOCON\_MASK}}
+\index{IOCON\_MASK@{IOCON\_MASK}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_MASK}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+\_\+\+M\+A\+SK~((uint32\+\_\+t)0x0000043F)}
+
+Bitmask for I\+O\+C\+ON register. The layout is as follows\+: [2\+:0] F\+U\+NC [4\+:3] M\+O\+DE [5\+:5] H\+YS [9\+:6] R\+E\+S\+E\+R\+V\+ED [10\+:10] OD [31\+:11] R\+E\+S\+E\+R\+V\+ED 
+
+Definition at line 29 of file iocon.\+h.
+
+\mbox{\label{iocon_8h_a712e51ecbf808d79946be5efc761ad2f}} 
+\index{iocon.h@{iocon.h}!IOCON\_MODE\_LSB@{IOCON\_MODE\_LSB}}
+\index{IOCON\_MODE\_LSB@{IOCON\_MODE\_LSB}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_MODE\_LSB}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+\_\+\+M\+O\+D\+E\+\_\+\+L\+SB~(3U)}
+
+L\+SB of bitfield M\+O\+DE [4\+:3] 
+
+Definition at line 16 of file iocon.\+h.
+
+\mbox{\label{iocon_8h_a1e337cd17d1faab090172a3f6cfec09d}} 
+\index{iocon.h@{iocon.h}!IOCON\_OD\_LSB@{IOCON\_OD\_LSB}}
+\index{IOCON\_OD\_LSB@{IOCON\_OD\_LSB}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_OD\_LSB}
+{\footnotesize\ttfamily \#define I\+O\+C\+O\+N\+\_\+\+O\+D\+\_\+\+L\+SB~(10U)}
+
+L\+SB for bit OD [10\+:10] 
+
+Definition at line 20 of file iocon.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{iocon_8h_a57b01d5a911d7056fe2986feaa2046a2}} 
+\index{iocon.h@{iocon.h}!IOCON\_init@{IOCON\_init}}
+\index{IOCON\_init@{IOCON\_init}!iocon.h@{iocon.h}}
+\doxysubsubsection{IOCON\_init()}
+{\footnotesize\ttfamily void I\+O\+C\+O\+N\+\_\+init (\begin{DoxyParamCaption}\item[{C\+H\+I\+P\+\_\+\+I\+O\+C\+O\+N\+\_\+\+P\+I\+O\+\_\+T}]{pin,  }\item[{uint8\+\_\+t}]{func,  }\item[{uint8\+\_\+t}]{mode,  }\item[{Bool}]{hysteresis,  }\item[{Bool}]{od }\end{DoxyParamCaption})}
+
+
+
+Function I\+O\+C\+O\+N\+\_\+init configures a G\+P\+IO pin to the needed functionality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & The G\+P\+IO pin, which shall be configured. \\
+\hline
+{\em func} & The functionality the G\+P\+IO pin shall execute. \\
+\hline
+{\em mode} & The mode the pin shall be set to. \\
+\hline
+{\em hysteresis} & Defines if hysteresis shall be used or not. \\
+\hline
+{\em od} & Defines if the pin shall have a G\+P\+IO or open-\/drain output. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file iocon.\+c.
+
