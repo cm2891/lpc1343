@@ -11,3 +11,8 @@ uint32_t I2C_read ()
 {
     return (LPC_I2C->DAT & I2C_DATA_MASK);
 }
+
+uint32_t I2C_get_data_buffer ()
+{
+    return (LPC_I2C->DATA_BUFFER & I2C_DATA_MASK);
+}

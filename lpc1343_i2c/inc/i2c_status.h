@@ -13,6 +13,11 @@
 /** Bitmask for register I2C0STAT. */
 #define I2C_STATUS_MASK         (0x000000F8)
 
+/**
+ *  @brief  Function I2C_get_status retrieves the register I2C0STAT.
+ *  @return uint32_t
+ *  @retval The register's content.
+ */
 uint32_t I2C_get_status ();
 
 #endif /* INC_I2C_STATUS_H_ */
