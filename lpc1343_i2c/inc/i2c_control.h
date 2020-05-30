@@ -33,11 +33,11 @@ typedef enum
  */
 typedef struct
 {
-    Bool assert_ack;
-    Bool irq;
-    Bool stop;
-    Bool start;
-    Bool enable;
+    Bool assert_ack;        /**< Assert acknowledge flag. */
+    Bool irq;               /**< I2C interrupt flag. */
+    Bool stop;              /**< STOP flag. */
+    Bool start;             /**< START flag. */
+    Bool enable;            /**< I2C interface enable. */
 } I2C_CTRL_SET_REG;
 
 /** @brief Structure I2C_CTRL_CLR_REG implements register I2C0CONCLR. */

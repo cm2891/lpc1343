@@ -74,11 +74,11 @@ typedef enum
  */
 typedef struct
 {
-    Bool TFE;
-    Bool TNF;
-    Bool RNE;
-    Bool RFF;
-    Bool BSY;
+    Bool TFE;       /**< 1: Transmit FIFO is empty, 0: else */
+    Bool TNF;       /**< 1: Transmit FIFO is not full, 0: else */
+    Bool RNE;       /**< 1: Receive FIFO is not empty, 0: else */
+    Bool RFF;       /**< 1: Receive FIFO is full, 0: else */
+    Bool BSY;       /**< 1: SPP is sending/receiving, 0: idle */
 } SPP_STATUS;
 
 /**
