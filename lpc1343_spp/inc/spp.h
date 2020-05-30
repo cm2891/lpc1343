@@ -61,6 +61,8 @@ typedef enum
 #define SPP_CPSR_MASK               ((uint32_t)0x000000FF)
 /** Bitmask for DATA. */
 #define SPP_DATA_MASK               ((uint32_t)0x0000FFFF)
+/** Bitmask for DIV in SSP0CLKDIV. */
+#define SPP_DIV_MASK                ((uint32_t)0x000000FF)
 
 typedef struct
 {
@@ -78,6 +80,7 @@ typedef struct
  *  @param  cpha Defines the clock out phase.
  *  @param  scr Defines the serial clock rate.
  *  @param  prescale_val Defines the prescaler value of register CPSDVSR.
+ *  @param  clk_div Defines the clock divider value of register DIV.
  *  @return void
  */
 void SPP_init ( SPP_WORD_SIZE dss
@@ -86,6 +89,7 @@ void SPP_init ( SPP_WORD_SIZE dss
               , Bool cpha
               , uint8_t scr
               , uint8_t prescale_val
+              , uint8_t clk_div
               );
 
 void SPP_write (uint16_t data);
