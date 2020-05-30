@@ -6,7 +6,7 @@
 
 #include "spp.h"
 
-void SPP_write (uint16_t data)
+void SPP_write (uint32_t data)
 {
-    LPC_SSP0->DR = (uint16_t)(data & SPP_DATA_MASK);
+    LPC_SSP0->DR = (data & SPP_DATA_MASK);
 }

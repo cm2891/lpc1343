@@ -6,7 +6,7 @@
 
 #include "spp.h"
 
-uint16_t SPP_read ()
+uint32_t SPP_read ()
 {
-    return (uint16_t)(LPC_SSP0->DR & SPP_DATA_MASK);
+    return (LPC_SSP0->DR & SPP_DATA_MASK);
 }
